@@ -38,6 +38,20 @@ nav a:hover::after {
   width: 100%;
 }
 
+.nav {
+  font-size: 2em;
+  margin-top: 0.5em;
+  background-color: #03a3df;
+  display: flex;
+  padding: 0.5em;
+}
+
+nav {
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+}
+
 h1 {
   font-size: 40px;
 }
@@ -59,18 +73,12 @@ h3 {
 }
 
 main {
-  grid-area: main;
   padding-right: 2rem;
   text-align: justify;
 }
 
-aside {
-  grid-area: aside;
-}
-
 footer {
   background-image: url("../images/footerImage.jpg");
-  grid-area: footer;
 }
 
 section {
