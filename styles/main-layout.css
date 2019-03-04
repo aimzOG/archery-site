@@ -13,22 +13,18 @@ header {
   text-align: center;
 }
 
-nav {
+.nav {
   font-size: 2em;
   margin-top: 0.5em;
   background-color: #03a3df;
   display: flex;
+  padding: 0.5em;
+}
+
+nav {
+  display: flex;
+  flex: 1;
   justify-content: space-around;
-}
-
-*/ nav a {
-  color: white;
-  text-decoration: none;
-  text-align: center;
-}
-
-nav a:visited {
-  color: #ccc;
 }
 
 main {

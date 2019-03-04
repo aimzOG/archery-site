@@ -5,18 +5,63 @@ body {
   font-size: 17px;
 }
 
+a {
+  text-decoration: underline;
+}
+
 nav a {
   color: white;
   text-decoration: none;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+/* this makes the underline for nav hrefs */
+nav a::after {
+  transition: all 0.2s ease-in-out;
+  content: "";
+  width: 0;
+  height: 4px;
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+/* this makes the underline for hrefs show */
+nav a:hover::after {
+  width: 100%;
+}
+/* shows which tab is the page you're on */
+.active::after {
+  width: 100%;
 }
 
-a:visited {
-  color: #ccc;
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 24px;
+  color: #ecb722;
+}
+
+h3 {
+  font-size: 17px;
+  color: #1b447f;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: bold;
 }
 
 main {
   grid-area: main;
+  padding-right: 2rem;
+  text-align: justify;
 }
 
 aside {
@@ -28,18 +73,12 @@ footer {
   grid-area: footer;
 }
 
-h1 {
-  font-size: 40px;
+section {
+  margin-bottom: 2rem;
 }
 
-h2 {
-  font-size: 24px;
-}
-
-h1,
-h2,
-h3 {
-  font-weight: bold;
+.youth-programs {
+  width: 300px;
 }
 
 video {
@@ -49,21 +88,34 @@ video {
 
 footer {
   background-image: url("../images/footerImage.jpg");
+  background-size: contain;
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
 }
 
 .associations {
   display: flex;
   flex-direction: column;
   text-align: center;
-  padding: 1rem auto;
+  padding: 1rem;
+  max-width: 350px;
 }
 
 .footer-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-links a {
   color: white;
+}
+
+.map iframe {
+  height: 100%;
 }
 
 .contact-info {
   text-align: center;
+  padding-top: 3rem;
 }
