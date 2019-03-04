@@ -1,0 +1,74 @@
+body {
+  background-color: black;
+  color: white;
+  font-family: Arial;
+  font-size: 17px;
+}
+
+nav {
+  text-align: center;
+  font-size: 2em;
+  margin-top: 0.5em;
+}
+
+*/ nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav a:visited {
+  color: #ccc;
+}
+
+.main-layout {
+  max-width: 1024px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 2rem;
+  grid-template-areas: "header header header header" " main main main aside" "footer footer footer footer";
+}
+
+header {
+  grid-area: header;
+  text-align: center;
+}
+
+main {
+  grid-area: main;
+}
+
+aside {
+  grid-area: aside;
+}
+
+footer {
+  background-image: url("../images/footerImage.jpg");
+  grid-area: footer;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: bold;
+}
+
+.testimonials {
+  font-size: 30px;
+  color: #03a3df;
+}
+
+h4 {
+  font-size: 14px;
+  text-transform: uppercase;
+}
