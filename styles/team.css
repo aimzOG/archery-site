@@ -21,12 +21,9 @@ footer {
   grid-area: footer;
 }
 
+.team-intro,
 h2,
 h3 {
-  text-align: center;
-}
-
-.team-intro {
   text-align: center;
 }
 

@@ -5,7 +5,7 @@
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto;
   grid-gap: 2rem;
-  grid-template-areas: "header header header header" " main main main aside" "footer footer footer footer";
+  grid-template-areas: "header header header header""main main main aside""footer footer footer footer";
 }
 
 header {
@@ -19,12 +19,6 @@ header {
   background-color: #03a3df;
   display: flex;
   padding: 0.5em;
-}
-
-nav {
-  display: flex;
-  flex: 1;
-  justify-content: space-around;
 }
 
 main {
